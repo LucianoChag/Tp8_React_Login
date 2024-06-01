@@ -1,0 +1,75 @@
+body {
+  background: linear-gradient(to bottom, #588acc, #000835); /* Degradado de turquesa oscuro a claro */
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, sans-serif;
+}
+
+.slider-container {
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: Helvetica, sans-serif;
+  position: relative;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 123, 167, 0); /* Cambiado a un color turquesa transparente */
+  border: none;
+  cursor: pointer;
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  width: 200%; /* Ajusta el ancho al doble */
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 123, 167, 0.3); /* Cambiado a un color turquesa transparente */
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+.slider {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+}
+
+.slide {
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.slide img {
+  width: 100%;
+}
+
+.descripcion {
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  color: #007BA7; /* Cambiado a un color turquesa */
+}
+
+.title {
+  font-family: Helvetica, sans-serif;
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #001F3F; /* Cambiado a un color azul marino */
+}
+
+.descripcion-container {
+  margin-top: 20px;
+}
